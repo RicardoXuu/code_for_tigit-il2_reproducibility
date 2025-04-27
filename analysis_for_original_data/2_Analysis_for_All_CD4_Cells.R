@@ -98,7 +98,7 @@ seurat_cd4@reductions$umap@cell.embeddings <- cds_umap
 
 
 
-# For Extended Data Fig.3c in Article
+# For Extended Data Fig.5c in Article
 pdf("plot/CD4_Monocle3_anno_New.pdf",height = 7, width = 7)
 DimPlot(seurat_cd4,reduction = "umap",group.by = "anno",pt.size = 1)+
   ggtitle("")+
@@ -131,7 +131,7 @@ DimPlot(seurat_cd4,reduction = "umap",group.by = "new_anno",pt.size = 1)+
 dev.off()
 
 
-# For Extended Data Fig.3d in Article
+# For Extended Data Fig.5d in Article
 pdf("plot/CD4_Monocle3_anno_NewCluster_DotPlot_New.pdf",height = 5, width = 4)
 DotPlot(seurat_cd4,features = rev(c("Cd3e","Cd4","Foxp3","Ifng")),group.by = "new_anno",scale = F,
         cols = c("white", "#CD3333"))+
@@ -157,7 +157,7 @@ dim(treg_cell_cluster)
 dim(seurat_treg)
 
 
-# For Fig.3d in Article
+# For Fig.3h in Article
 pdf("plot/Treg_Monocle3_NewCluster_New.pdf",height = 7, width = 7)
 DimPlot(seurat_treg,reduction = "umap",group.by = "new_anno_2",pt.size = 3)+
   ggtitle("")+
