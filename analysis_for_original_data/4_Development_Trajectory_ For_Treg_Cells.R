@@ -91,7 +91,7 @@ plot_cell_trajectory(cds_new_reDim,
                      color_by = "Sample")
 dev.off()
 
-# For Figure 3g in Article
+# For Figure 3j in Article
 pdf("plot/Treg_Monocle2_Sample_split.pdf",height = 6)
 plot_cell_trajectory(cds_new_reDim, 
                      cell_size = 1,
@@ -109,7 +109,7 @@ plot_cell_trajectory(cds_new_reDim,
 dev.off()
 
 
-# For Figure 3g in Article
+# For Figure 3j in Article
 pdf("plot/Treg_Monocle2_Pseudotime.pdf",height = 4)
 plot_cell_trajectory(cds_new_reDim, 
                      cell_size = 1,
@@ -135,7 +135,7 @@ plot_cell_trajectory(cds_new_reDim,
 dev.off()
 
 
-# For Figure 3g in Article
+# For Figure 3j in Article
 pdf("plot/Treg_Monocle2_NewCluster.pdf",height = 4)
 plot_cell_trajectory(cds_new_reDim,
                      cell_size = 1,
@@ -179,7 +179,7 @@ diff_test_res <- differentialGeneTest(cds_new_reDim[Treg_function_score$gene,],
 sig_gene_names <- row.names(subset(diff_test_res, qval < 0.1))
 
 
-# For Figure 3h in Article
+# For Figure 3k in Article
 pdf("plot/Function_Score_Treg_New_Heatmap.pdf",width = 4,height = 3)
 plot_pseudotime_heatmap(cds_new_reDim[gene_list,],
                         num_clusters = 0,
@@ -212,7 +212,7 @@ Cell_Dist <- Cell_Dist %>%
 
 
 
-# For Figure 3E in Article
+# For Figure 3e in Article
 pdf("plot/Cell_Dist_Score_Treg_New_Exp.pdf",height = 5,width = 3)
 p <- ggplot(Cell_Dist, aes(x = factor(cluster_higRes), y = percent, fill = Sample)) +
   geom_bar(stat = "identity") +
