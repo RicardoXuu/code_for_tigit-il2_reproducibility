@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16785532.svg)](https://doi.org/10.5281/zenodo.16785532)
 # αTIGIT-IL2 single-cell analysis – code for reproducibility
 > Reproduces the single-cell RNA-seq processing, trajectory analysis, differential
 expression and visualisations used in  
